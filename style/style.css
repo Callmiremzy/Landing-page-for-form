@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+.wrapper-div{
+    display: flex;
+    height: 100vh;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    background: #2F2A36;
+}
+.right-side{
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+}
+.image-card {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.logo h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     background: linear-gradient(90deg, #ff7a18, #af002d 70%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+/* From Uiverse.io by alexmaracinaru */ 
+.cta {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: white;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #ffffff;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #b1dae7;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+.image-txt{
+    position: absolute;
+    bottom: 80px;
+}
+.image-txt h2{
+    font-size: 30px;
+    font-weight: 100;
+    display: inline-block;
+    max-width: 300px;
+    text-align: center;
+}
+.left-side{
+    flex: 1;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    color: #fff;
+}
+.div-wrap{
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+    padding: 30px;
+}
+.div-wrap h1{
+    font-weight: 100;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.small{
+    color: #c3bebe;
+    margin-bottom: 50px;
+}
+.small a{
+  color: #9a7bff;
+}
+form input{
+  background: #3a3441;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+  margin: 10px 0;
+  color: white;
+}
+.row{
+  display: flex;
+  gap: 20px;
+}
+::placeholder{
+  color: rgb(181, 171, 171);
+  font-size: 15px;
+}
+.check{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.check input[type="checkbox"]{
+  width: 16px;
+  height: 16px;
+}
+.check a {
+  color: #9a7bff;
+}
+.submit-btn {
+  align-items: center;
+  background: #8055ff;
+  width: 100%;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 18px;
+  font-size: 15px;
+}
+.divider{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  color: #797979;
+}
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #5f5d5d;
+}
+.divider span{
+   margin: 0 10px;
+  font-weight: 600;
+}
+.socials{
+  display: flex;
+  gap: 10px;
+}
+.social-btn{
+  width: 100%;
+  padding: 12px;
+  background: #2a2638;
+  border: 2px solid #4d4469;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+.google-num{
+   font-size: 20px;
+  background: linear-gradient(90deg, #4285F4, #DB4437, #F4B400, #0F9D58);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.apple-num{
+  font-size: 20px;
+}
